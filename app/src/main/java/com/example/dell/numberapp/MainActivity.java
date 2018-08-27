@@ -1,5 +1,6 @@
 package com.example.dell.numberapp;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,37 +50,55 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(count==0){
-
-                }
+                    MediaPlayer zero = MediaPlayer.create(MainActivity.this, R.raw.zero);
+                    zero.start();             }
                 else if(count==1){
+                    MediaPlayer one = MediaPlayer.create(MainActivity.this, R.raw.one);
+                    one.start();
 
                 }
                 else if(count==2){
-
+                    MediaPlayer two = MediaPlayer.create(MainActivity.this, R.raw.two);
+                    two.start();
                 }
                 else if(count==3){
+                    MediaPlayer three = MediaPlayer.create(MainActivity.this, R.raw.three);
+                    three.start();
 
                 }
                 else if(count==4){
+                    MediaPlayer four = MediaPlayer.create(MainActivity.this, R.raw.four);
+                    four.start();
 
                 }
                 else if(count==5){
+                    MediaPlayer five = MediaPlayer.create(MainActivity.this, R.raw.five);
+                    five.start();
 
                 }
                 else if(count==6){
+                    MediaPlayer six = MediaPlayer.create(MainActivity.this, R.raw.six);
+                    six.start();
 
                 }
                 else if(count==7){
+                    MediaPlayer seven = MediaPlayer.create(MainActivity.this, R.raw.seven);
+                    seven.start();
 
                 }
                 else if(count==8){
+                    MediaPlayer eight = MediaPlayer.create(MainActivity.this, R.raw.eight);
+                    eight.start();
 
                 }
                 else if(count==9){
+                    MediaPlayer nine = MediaPlayer.create(MainActivity.this, R.raw.nine);
+                    nine.start();
 
                 }
                 else if(count==10){
-
+                    MediaPlayer ten = MediaPlayer.create(MainActivity.this, R.raw.ten);
+                    ten.start();
                 }
             }
         });
@@ -129,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
             numner_text.setText("Ten");
             numberImage.setImageResource(R.drawable.ten);
         }
+
     }
 
 }
