@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(count<10) {
                     count = count+1;
+                    changingNumberOnImageAndText();
                 }
-                changingNumberOnImageAndText();
             }
         });
         previous.setOnClickListener(new View.OnClickListener() {
@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(count>0) {
                     count = count - 1;
+                    changingNumberOnImageAndText();
                 }
-                changingNumberOnImageAndText();
 
             }
         });
@@ -130,4 +130,5 @@ public class MainActivity extends AppCompatActivity {
             numberImage.setImageResource(R.drawable.ten);
         }
     }
+
 }
